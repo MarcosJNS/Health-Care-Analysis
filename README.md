@@ -15,7 +15,7 @@ It is important to know the balance between having a robust health care system a
 
 ## Prerequisites
 
-What things you need to install the software and how to install them.
+What things you need to import and how to install them.
 
 ```
 !conda install numpy
@@ -39,7 +39,7 @@ from pandas.io.json import json_normalize # tranform JSON file into a pandas dat
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 
-# import k-means from clustering stage
+!conda install -c anaconda scikit-learn
 from sklearn.cluster import KMeans
 
 !conda install -c conda-forge folium=0.5.0 --yes
