@@ -8,10 +8,10 @@ It is important to know the balance between having a robust health care system a
 
 ## Structure of the project
 
-*Retrieve Data
-*Clean Data
-*Normalyze & Analyze Data
-*Display Results & Apply ML Tools
+* Retrieve Data
+* Clean Data
+* Normalyze & Analyze Data
+* Display Results & Apply ML Tools
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ https://developers.google.com/public-data/docs/canonical/countries_csv
 ```
 ## Built With
 
-*Jupiter Notebook 6.0.1
+* Jupiter Notebook 6.0.1
 
 
 
