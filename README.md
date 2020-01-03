@@ -18,13 +18,15 @@ It is important to know the balance between having a robust health care system a
 What things you need to install the software and how to install them.
 
 ```
+!conda install numpy
 import numpy as np
 
+!conda install pandas
 import pandas as pd 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
-
+!conda install json
 import json 
 
 !conda install -c conda-forge geopy --yes 
@@ -33,7 +35,7 @@ from geopy.geocoders import Nominatim
 import requests # library to handle requests
 from pandas.io.json import json_normalize # tranform JSON file into a pandas dataframe
 
-
+!conda install matplotlib
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 
