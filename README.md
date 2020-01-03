@@ -1,83 +1,79 @@
 # Health-Care-Analysis
 
-In this project it will be introduced an analysis refering to the relation between Health Care expenses and Life expentancy along different countries.
+## Intro
 
-### Prerequisites
+In this project it will be introduced an analysis refering to the relation between Health Care expenses and Life Expentancy among different countries.
 
-What things you need to install the software and how to install them
+It is important to know the balance between having a robust health care system and life expentancy. That is why it will be studied the impact in society that this two areas have through the data retrieved in different fields, such as cost of life, in order to make a ranking and cluster around one houndred countries into different groups. This way, it can be obtained the performance of the health care system in each country and thus, the impact in society.
 
-```
-It is an easy project
-```
+## Structure of the project
 
-### Installing
+*Retrieve Data
+*Clean Data
+*Normalyze & Analyze Data
+*Display Results & Apply ML Tools
 
-A step by step series of examples that tell you how to get a development env running
+## Prerequisites
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+What things you need to install the software and how to install them.
 
 ```
-until finished
+import numpy as np
+
+import pandas as pd 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+
+
+import json 
+
+!conda install -c conda-forge geopy --yes 
+from geopy.geocoders import Nominatim 
+
+import requests # library to handle requests
+from pandas.io.json import json_normalize # tranform JSON file into a pandas dataframe
+
+
+import matplotlib.cm as cm
+import matplotlib.colors as colors
+
+# import k-means from clustering stage
+from sklearn.cluster import KMeans
+
+!conda install -c conda-forge folium=0.5.0 --yes
+import folium # map rendering library
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Data Needed
 
-## Running the tests
+Which Data is required to perform the research.
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Wikipidia expenses per capita in health care per country
 
 ```
-Give an example
+https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+### Numbeo cost of living ranking
 
 ```
-Give an example
+https://www.numbeo.com/cost-of-living/rankings_by_country.jsp
 ```
 
-## Deployment
+### Wikipedia life expentancy per country
+```
+https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
+```
 
-Add additional notes about how to deploy this on a live system
+### Foursquare location / Google Geodata Location 
 
+```
+https://developers.google.com/public-data/docs/canonical/countries_csv
+```
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+*Jupiter Notebook 6.0.1
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
