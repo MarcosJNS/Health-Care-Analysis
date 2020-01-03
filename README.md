@@ -42,7 +42,7 @@ import matplotlib.colors as colors
 !conda install -c anaconda scikit-learn
 from sklearn.cluster import KMeans
 
-!conda install -c conda-forge folium=0.5.0 --yes
+!conda install -c conda-forge folium=0.7.0 --yes
 import folium # map rendering library
 ```
 
